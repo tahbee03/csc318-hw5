@@ -1,4 +1,4 @@
-require("dote")
+require("dotenv").config();
 const express = require("express"); // Server
 const bp = require("body-parser"); // form (HTML) -> request (JS)
 const mongoose = require("mongoose"); // Database

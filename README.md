@@ -7,4 +7,4 @@ Fifth homework assignment for CSC 318 (Internet Programming) course
 
 **Instructions:** https://zellwk.com/blog/crud-express-mongodb/
 
-**Completed Website:** -
+**Completed Website:** https://csc318-hw5.vercel.app/
