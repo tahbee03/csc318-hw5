@@ -91,8 +91,6 @@ try {
                 console.log(`Listening on port ${process.env.PORT}.`);
             });
         }
-
-        module.exports = app;
     };
 
     run();
