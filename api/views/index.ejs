@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HW 5</title>
+    </head>
+    <body>
+        <form action="/people" method="POST" id="input-form">
+            <input type="text" placeholder="Name" name="name" required />
+            <input type="text" placeholder="Quote" name="quote" required />
+            <button type="submit">Submit Form</button>
+            <button type="button" id="update">Update Match</button>
+        </form>
+
+        <ul>
+            <% for( let i = 0; i < data.length; i++ ) { %>
+                <li>
+                    <%= data[i].name %>: <%= data[i].quote %>
+                    <button class="delete" type="button" id="<%= data[i]._id %>">Delete</button>
+                </li>
+            <% } %>
+        </ul>
+
+        <script src="/script.js"></script>
+    </body>
+</html>

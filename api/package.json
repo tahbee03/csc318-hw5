@@ -1,0 +1,30 @@
+{
+  "name": "csc318-hw5",
+  "version": "1.0.0",
+  "description": "Fifth homework assignment for CSC 318 (Internet Programming) course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahbee03/csc318-hw5.git"
+  },
+  "author": "Talike Bennett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tahbee03/csc318-hw5/issues"
+  },
+  "homepage": "https://github.com/tahbee03/csc318-hw5#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
