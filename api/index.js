@@ -1,3 +1,4 @@
+require("dote")
 const express = require("express"); // Server
 const bp = require("body-parser"); // form (HTML) -> request (JS)
 const mongoose = require("mongoose"); // Database
@@ -81,7 +82,7 @@ app.delete("/people", async (req, res) => {
 // DB CONNECTION AND SERVER 
 try {
     const run = async () => {
-        await mongoose.connect("mongodb+srv://talikeb20:xjCvFwS5kr1S9Ywe@cluster0.xw7cpxk.mongodb.net/hw5?retryWrites=true&w=majority");
+        await mongoose.connect(process.env.DB_URL);
 
         console.log("Successfully connected to the database.");
 
