@@ -86,9 +86,13 @@ try {
 
         console.log("Successfully connected to the database.");
 
-        app.listen(3000, () => {
-            console.log("Listening on port 3000.");
-        });
+        if(process.env.PORT) {
+            app.listen(process.env.PORT, () => {
+                console.log(`Listening on port ${process.env.PORT}.`);
+            });
+        }
+
+        module.exports = app;
     };
 
     run();
